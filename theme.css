@@ -1,0 +1,25 @@
+div#products {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%) , 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-item {
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.img_holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_holder img {
+    aspect-ratio: 6 / 3;
+    object-fit: contain;
+}
